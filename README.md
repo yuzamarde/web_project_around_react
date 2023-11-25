@@ -1,7 +1,6 @@
 <<<<<<< HEAD
 # Tripleten web_project_around_react
 =======
-# Tripleten web_project_around
 
 # Proyek 5: Di Sekitar Amerika Serikat
 
