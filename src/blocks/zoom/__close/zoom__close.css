@@ -1,0 +1,17 @@
+.zoom__close {
+    display: flex;
+    cursor: pointer;
+    background: none;
+    justify-content: flex-end;
+    margin-right: -468px;
+    border: none;
+  }
+@media screen and (max-width: 768px) {
+    .zoom__close {
+        margin-right: -227px;
+    }  
+}
+
+@media screen and (max-width: 320px) {
+
+}

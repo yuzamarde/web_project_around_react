@@ -1,0 +1,19 @@
+.zoom__file {
+    height: 700px;
+    width: 400px;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+@media screen and (max-width: 768px) {
+    .zoom__file {
+        height: 580px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .zoom__file {
+        height: 450px;
+        width: 250px;
+    }
+}

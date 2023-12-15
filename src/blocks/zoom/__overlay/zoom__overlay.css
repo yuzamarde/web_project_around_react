@@ -1,0 +1,14 @@
+.zoom__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+@media screen and (max-width: 768px) {
+  
+}
+  
+@media screen and (max-width: 320px) {
+
+}
