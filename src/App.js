@@ -3,13 +3,39 @@ import './pages/index.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
+import { React, useEffect, useState } from 'react';
+import { Api } from './utils/api';
+import { currentUserContext } from './utils/constants';
+
+
 
 function App() {
+  const api = new Api({
+    baseUrl: "https://around.nomoreparties.co/v1/web_id_03/",
+    headers: {
+      authorization: "1ad1c0df-de90-4291-88fd-ebf0a0fa5a42",
+      "Content-Type": "application/json"
+    }
+  }); 
+
+  const [currentUser, setcurrentUser] = useState(false);
+
+
+  useEffect(() => {
+    const currentUser = api.getUserInformation()
+    .then((res) => setcurrentUser(res)) 
+  }, [])
+
   return (
+    <currentUserContext.Provider value={currentUser}>
     <div className="App root">
+      
+      
       <Header />
       <Main />
 
+      {/* <YourComponent /> */}
+      
       <main class="card">
       <template id="cardTemplate">
         <div class="card__item">
@@ -42,12 +68,13 @@ function App() {
       </div>
       </div>
 
-      
       <Footer />
     </div>
+    </currentUserContext.Provider>
   );
 }
 
 export default App;
 
+//combine it with this code
 
