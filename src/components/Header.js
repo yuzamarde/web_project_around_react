@@ -1,14 +1,11 @@
-import '../pages/index.css';
- 
+import React from "react";
+import logo from "../images/logo.png";
 function Header() {
-  
-  return ( 
-    <header class="header">
-      <h1 class="header__title">Around</h1>
+  return (
+    <header className="header">
+      <img src={logo} alt="Logo tripleten" />
     </header>
-    
   );
 }
 
 export default Header;
-

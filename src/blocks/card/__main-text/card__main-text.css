@@ -1,9 +1,9 @@
-.card__main-text {
-	width: 282px;
-	height: 79px;
-	background-color: #fff;
-	border-radius: 0px 0px 10px 10px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.card__main-text{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

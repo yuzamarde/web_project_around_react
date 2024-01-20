@@ -1,13 +1,9 @@
 .footer {
-	margin-top: 68px;
-	width: 100%;
-	margin-bottom: 60px;
+  max-width: 882px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 60px auto 0;
+  flex-direction: column;
 }
 
-@media screen and (max-width: 320px) {
-	.footer {
-		margin-top: 50px;
-		margin-bottom: 36px;
-		width: 282px;
-	}
-}
+

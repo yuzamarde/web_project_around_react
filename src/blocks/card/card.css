@@ -1,18 +1,12 @@
 .card {
- width: 100%;
- display: flex;
- flex-wrap: wrap;
- gap: 17px;
+  width: 282px;
+  height: 361px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  position: relative;
 }
 
-@media screen and (max-width: 900px) {
- .card {
-  justify-content: center;
- }
-}
-
-@media screen and (max-width: 320px) {
- .card {
-  justify-content: center;
- }
-}

@@ -1,7 +1,12 @@
-@media screen and (max-width: 900px) {
- .profile__info {
+.profile__info {
+  width: 427px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
- }
+  flex-wrap: wrap;
+  justify-self: flex-end;
+}
+@media screen and (max-width: 436px) {
+  .profile__info {
+    width: 280px;
+    justify-content: space-between;
+  }
 }
